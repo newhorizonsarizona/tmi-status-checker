@@ -21,7 +21,7 @@ func main() {
 		Messages: []openai.ChatCompletionMessage{
 			{
 				Role:    openai.ChatMessageRoleUser,
-				Content: "Hello!",
+				Content: "Show me the 2024 distinguished club status for toastmasters club 6350, new horizons toastmasters club.",
 			},
 		},
 	}
