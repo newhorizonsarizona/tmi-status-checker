@@ -147,7 +147,7 @@ func main() {
 	}
 
 	// Write the YAML data to a file
-	fileName := "dcp_report.yaml"
+	fileName := "../dcp_report.yaml"
 	err = os.WriteFile(fileName, yamlBytes, 0644)
 	if err != nil {
 		log.Fatalf("Failed to write DCP Achievements Yaml file: %v", err)

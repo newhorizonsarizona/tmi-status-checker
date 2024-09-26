@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "puppeteer": "^23.4.1"
+  }
+}
