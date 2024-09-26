@@ -24,6 +24,11 @@ install-tools:
 	npm install --save-dev puppeteer
 	npm install -g prettier
 
-run:
+generate-report:
 	pushd $(WEB_SCRAPER) && go run main.go && popd
+
+generate-screenshot:
 	pushd $(CAPTURE_SCREENSHOT) && node capture.js && popd
+
+generate-all: generate-report generate-screenshot
+	
