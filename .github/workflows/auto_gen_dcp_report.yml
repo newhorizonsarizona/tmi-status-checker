@@ -36,13 +36,3 @@ jobs:
           author_email: 'github-actions[bot]@users.noreply.github.com'
           message: 'Auto commit: updated the club dcp report files'
           add: 'dcp_report*' 
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ vars.GITHUB_TOKEN }}
-          commit-message: 'Automated commit for dcp report changes'
-          branch: auto-generated-dcp-report  # This is the branch the PR will be created from
-          base: main  # The base branch the PR targets
-          title: 'Automated Pull Request'
-          body: 'This pull request contains automated changes.'
