@@ -1,0 +1,48 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Auto-generate the Club DCP Report
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron: '0 12 15 * *' # Runs at 12pm UTC on the 15th day of every month
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+env:
+  CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+  GITHUB_TOKEN: ${{ secrets.TMI_DCP_STATUS_API_TOKEN }}
+  
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  auto-commit-and-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install tools
+        run: make install-tools
+
+      - name: Test Generate DCP Report Yaml and Screenshot
+        run: make generate-all
+      
+      - name: Add and Commit Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: 'github-actions[bot]'
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          message: 'Auto commit: updated the club dcp report files'
+          add: 'dcp_report*' 
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ vars.GITHUB_TOKEN }}
+          commit-message: 'Automated commit for dcp report changes'
+          branch: auto-generated-dcp-report  # This is the branch the PR will be created from
+          base: main  # The base branch the PR targets
+          title: 'Automated Pull Request'
+          body: 'This pull request contains automated changes.'
