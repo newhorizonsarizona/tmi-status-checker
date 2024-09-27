@@ -1,22 +1,3 @@
-# Toastmasters International Club DCP Status Checker
-Check the Club DCP status page to generate the current DCP report in Yaml and image formats.
-
-## Install tools
-Install go lang and nodejs
-
-`make install-tools`
-
-## Format the Code
-Format the code
-
-`make format`
-
-## Generate Report
-Generate Club DCP report in Yaml format
-
-`make generate-report`
-
-```
 DCP Report 2024-2025:
     Administration:
         Club officer list on time:
@@ -79,16 +60,3 @@ DCP Report 2024-2025:
             achieved: "0"
             status: Second Training Period 4 needed
             target: "4"
-
-```
-
-
-Capture the Club DCP report screenthot png
-
-`make generate-screenshot`
-
-![Club DCP Report](./dcp_report.png)
-
-Generate Club DCP report in Yaml and capture the Club DCP report screenthot
-
-`make generate-all`
