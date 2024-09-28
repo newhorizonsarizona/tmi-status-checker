@@ -16,6 +16,8 @@ Generate Club DCP report in Yaml format
 
 `make generate-report`
 
+![dcp_report.yaml](./dcp_report.yaml)
+
 ```
 DCP Report 2024-2025:
     Administration:
@@ -38,8 +40,8 @@ DCP Report 2024-2025:
             Target: "10"
     Education:
         Level 1 awards:
-            achieved: "1"
-            status: 3 Level 1s needed
+            achieved: "2"
+            status: 2 Level 1s needed
             target: "4"
         Level 2 awards:
             achieved: "0"
@@ -79,7 +81,6 @@ DCP Report 2024-2025:
             achieved: "0"
             status: Second Training Period 4 needed
             target: "4"
-
 ```
 
 
