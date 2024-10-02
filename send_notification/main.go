@@ -101,7 +101,7 @@ type DCPReport struct {
 				Target   string `yaml:"target"`
 			} `yaml:"Club officers trained November-February"`
 		} `yaml:"Training"`
-	} `yaml:"DCP Report"`
+	} `yaml:"Distinguished Club Program Report"`
 }
 
 func main() {
@@ -121,16 +121,17 @@ func main() {
 		log.Fatalf("error: %v", err)
 	}
 
-	// Access the values from the config struct
-	err = sendAnnouncement(generateAdaptiveCard())
+	//Send the announcement
+	err = sendAnnouncement(generateMessageCard())
 	if err != nil {
-		log.Fatalf("Failed to send announcement: %v", err)
+		log.Fatalf("Failed to send DCP Report announcement message: %v", err)
 	} else {
-		log.Println("Announcement was sent successfully!")
+		log.Println("DCP Report Announcement message was sent successfully!")
 	}
+
 }
 
-func generateAdaptiveCard() map[string]interface{} {
+func generateMessageCard() map[string]interface{} {
 	statusSubheading := "Achieved " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target
 	statusMessage := "Congratulations on your achievements!"
 	if dcpReport.DCPReport.DCPStatus.Overall.Distinguished == "Yes" {
@@ -151,7 +152,7 @@ func generateAdaptiveCard() map[string]interface{} {
 	question := `
 				In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
 				The first part praises the club for their overall achievements and membership, and 
-				the second part commends the club for DCP goals achieved in each category.
+				the second part commends the club for Distinguished Club Program goals achieved in each category.
 				` + string(yaml)
 	statusMessage = util.Chat(question)
 
@@ -182,14 +183,15 @@ func generateAdaptiveCard() map[string]interface{} {
 							"wrap":    true,
 						},
 						{
+							"type": "TextBlock",
+							"text": statusMessage,
+							"wrap": true,
+						},
+						{
 							"type":        "Image",
 							"url":         "https://github.com/newhorizonsarizona/tmi-status-checker/blob/main/dcp_report.png?raw=true",
 							"pixelWidth":  400,
 							"pixelHeight": 500,
-						},
-						{
-							"type": "TextBlock",
-							"text": statusMessage,
 						},
 					},
 					"actions": []map[string]interface{}{

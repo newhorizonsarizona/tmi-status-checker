@@ -5,6 +5,7 @@ PACKAGE_NAME = $(APP_NAME)
 SUBSCRIPTION_ID = eb792c5c-94c2-48d5-b355-c807ecdbe88e
 WEB_SCRAPER=web_scraper
 CAPTURE_SCREENSHOT=capture_screenshot
+SEND_NOTIFICATION=send_notification
 
 .PHONY: test test-* format build
 
@@ -32,3 +33,5 @@ generate-screenshot:
 
 generate-all: generate-report generate-screenshot
 	
+send-notification:
+	pushd $(SEND_NOTIFICATION) && go run main.go && popd

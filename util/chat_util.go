@@ -13,7 +13,8 @@ import (
 func Test() {
 	answer := Chat(`
 				In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
-				The first part praises the club for membership and overall status, and the second part commends the club for DCP goals achieved in each category. 
+				The first part praises the club for their overall achievements and membership, and 
+				the second part commends the club for Distinguished Club Program goals achieved in each category. 
 Distinguished Club Program Report:
     Administration:
         Club officer list on time:
