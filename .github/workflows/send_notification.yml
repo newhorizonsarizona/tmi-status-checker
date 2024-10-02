@@ -1,0 +1,32 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Send the DCP Report Announcement to MS Teams
+
+# Controls when the workflow will run
+on:
+    workflow_dispatch: # manual trigger
+    workflow_run:
+      workflows: [Auto-generate the Club DCP Report]
+      types:
+        - completed
+      branches:
+        - main
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  CHANNEL_WEBHOOK_URL: ${{ secrets.CHANNEL_WEBHOOK_URL }}
+  
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  send-notification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install tools
+        run: make install-tools
+
+      - name: Send the notification to the MS Teams Channel
+        run: make send-notification

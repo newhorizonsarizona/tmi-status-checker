@@ -16,7 +16,7 @@ Generate Club DCP report in Yaml format
 
 `make generate-report`
 
-![dcp_report.yaml](./dcp_report.yaml)
+![dcp_report.yaml](./reports/dcp_report.yaml)
 
 ```
 DCP Report 2024-2025:
@@ -88,8 +88,12 @@ Capture the Club DCP report screenthot png
 
 `make generate-screenshot`
 
-![Club DCP Report](./dcp_report.png)
+![Club DCP Report](./reports/dcp_report.png)
 
 Generate Club DCP report in Yaml and capture the Club DCP report screenthot
 
 `make generate-all`
+
+Use the generated Yaml report and summarize the achievements using Chat GPT API. Send an announcement message to the MS Teams channel with the summary and image captured.
+
+`make send-notification`
