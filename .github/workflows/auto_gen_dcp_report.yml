@@ -35,4 +35,4 @@ jobs:
           author_name: 'github-actions[bot]'
           author_email: 'github-actions[bot]@users.noreply.github.com'
           message: 'Auto commit: updated the club dcp report files'
-          add: 'dcp_report*' 
+          add: 'reports/*' 

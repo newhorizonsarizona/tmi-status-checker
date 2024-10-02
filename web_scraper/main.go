@@ -82,6 +82,7 @@ func main() {
 		}
 		if class == "goalDescription" {
 			goalKey = strings.TrimSpace(strings.ReplaceAll(e.Text, "All Pathways education awards must be submitted in both Base Camp and Club Central.", ""))
+			goalKey = strings.ReplaceAll(goalKey, ",", ";")
 			goalValue = map[string]string{"target": "", "achieved": "", "status": ""}
 			dcpGoals[goalCategoryKey][goalKey] = goalValue
 			return
@@ -131,7 +132,7 @@ func main() {
 	}
 	dcpReport := make(map[string]map[string]map[string]map[string]string)
 	dcpGoals["DCP Status"] = map[string]map[string]string{
-		"Overall":    {"Distinguished": "No", "Current": strconv.Itoa(currentAchievementCount), "Target": strconv.Itoa(10)},
+		"Overall":    {"Year": tmYear, "Distinguished": "No", "Current": strconv.Itoa(currentAchievementCount), "Target": strconv.Itoa(10)},
 		"Membership": {"Base": membershipBase, "To Date": membershipToDate, "Required": "20"},
 	}
 	if currentStatus != "" {
@@ -140,14 +141,14 @@ func main() {
 		}
 		dcpGoals["DCP Status"]["Overall"][currentStatus] = "Yes"
 	}
-	dcpReport["DCP Report "+tmYear] = dcpGoals
+	dcpReport["DCP Report"] = dcpGoals
 	yamlBytes, err := yaml.Marshal(dcpReport)
 	if err != nil {
 		log.Fatalf("Error converting map to yml", err)
 	}
 
 	// Write the YAML data to a file
-	fileName := "../dcp_report.yaml"
+	fileName := "../reports/dcp_report.yaml"
 	err = os.WriteFile(fileName, yamlBytes, 0644)
 	if err != nil {
 		log.Fatalf("Failed to write DCP Achievements Yaml file: %v", err)

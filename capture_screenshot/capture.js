@@ -17,10 +17,10 @@ const puppeteer = require("puppeteer");
 
   // Get the element and take a screenshot of it
   const element = await page.$(selector);
-  await element.screenshot({ path: "../dcp_report.png" });
+  await element.screenshot({ path: "../reports/dcp_report.png" });
 
   // Close the browser
   await browser.close();
 
-  console.log("Screenshot saved as ../dcp_report.png");
+  console.log("Screenshot saved as ../reports/dcp_report.png");
 })();
