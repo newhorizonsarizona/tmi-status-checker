@@ -141,7 +141,7 @@ func main() {
 		}
 		dcpGoals["DCP Status"]["Overall"][currentStatus] = "Yes"
 	}
-	dcpReport["DCP Report"] = dcpGoals
+	dcpReport["Distinguished Club Program Report"] = dcpGoals
 	yamlBytes, err := yaml.Marshal(dcpReport)
 	if err != nil {
 		log.Fatalf("Error converting map to yml", err)

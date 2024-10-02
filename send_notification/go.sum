@@ -1,7 +1,7 @@
-github.com/newhorizonsarizona/tmi-status-checker v0.0.0-20240928000839-91b1cc84641d h1:DjaAGN52dd/hUm0R8NzUvvJWhtGm/3/tTLRtos/wq2c=
-github.com/newhorizonsarizona/tmi-status-checker v0.0.0-20240928000839-91b1cc84641d/go.mod h1:Eudn/WDSIFVjZp+0mSeknd0lnjVCNS+JtP95PQbKHwo=
-github.com/sashabaranov/go-openai v1.28.1 h1:aREx6faUTeOZNMDTNGAY8B9vNmmN7qoGvDV0Ke2J1Mc=
-github.com/sashabaranov/go-openai v1.28.1/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
+github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20241002175354-e397c6147997 h1:Cv+uuJKyi/N/k81VyT+Ujc0AjvaggdN+Damhp22+Ybo=
+github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20241002175354-e397c6147997/go.mod h1:37x/krZpFlGJjAWXG7Dz4PCkBCNE1hMGTTID5UfLw6o=
+github.com/sashabaranov/go-openai v1.31.0 h1:rGe77x7zUeCjtS2IS7NCY6Tp4bQviXNMhkQM6hz/UC4=
+github.com/sashabaranov/go-openai v1.31.0/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
 golang.org/x/time v0.6.0 h1:eTDhh4ZXt5Qf0augr54TN6suAUudPcawVZeIAPU7D4U=
 golang.org/x/time v0.6.0/go.mod h1:3BpzKBy/shNhVucY/MWOyx10tF3SFh9QdLuxbVysPQM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=

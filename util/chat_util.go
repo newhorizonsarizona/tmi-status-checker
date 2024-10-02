@@ -85,7 +85,7 @@ Distinguished Club Program Report:
 func Chat(question string) string {
 	api_key := os.Getenv("OPENAI_API_KEY")
 	if api_key == "" {
-		log.Printf("API Key error: %v\n")
+		log.Println("API Key error.")
 		return "API Key error"
 	}
 	// Initialize the rate limiter (e.g., 1 request per second)

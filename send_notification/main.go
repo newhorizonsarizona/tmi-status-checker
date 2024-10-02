@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	chatgpt "github.com/newhorizonsarizona/tmi-status-checker"
-	
+	util "github.com/newhorizonsarizona/tmi-status-checker/util"
+
 	"gopkg.in/yaml.v3"
 )
 
@@ -143,8 +143,17 @@ func generateAdaptiveCard() map[string]interface{} {
 		statusSubheading += "Achieved President's Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
 	}
 
-	question := ""
-	statusMessage = chatgpt.chat(question)
+	// Open the YAML file
+	yaml, err := os.ReadFile("../reports/dcp_report.yaml")
+	if err != nil {
+		log.Fatalf("error: %v", err)
+	}
+	question := `
+				In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
+				The first part praises the club for their overall achievements and membership, and 
+				the second part commends the club for DCP goals achieved in each category.
+				` + string(yaml)
+	statusMessage = util.Chat(question)
 
 	messageCard := map[string]interface{}{
 		"type": "message",
