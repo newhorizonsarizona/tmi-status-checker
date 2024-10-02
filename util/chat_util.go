@@ -10,8 +10,8 @@ import (
 	"golang.org/x/time/rate"
 )
 
-func test() {
-	answer := chat(`
+func Test() {
+	answer := Chat(`
 				In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
 				The first part praises the club for membership and overall status, and the second part commends the club for DCP goals achieved in each category. 
 Distinguished Club Program Report:
@@ -82,8 +82,12 @@ Distinguished Club Program Report:
 	log.Println("Answer: ", answer)
 }
 
-func chat(question string) string {
+func Chat(question string) string {
 	api_key := os.Getenv("OPENAI_API_KEY")
+	if api_key == "" {
+		log.Printf("API Key error: %v\n")
+		return "API Key error"
+	}
 	// Initialize the rate limiter (e.g., 1 request per second)
 	limiter := rate.NewLimiter(rate.Every(1*time.Second), 1)
 	client := openai.NewClient(api_key)
