@@ -32,7 +32,7 @@ Distinguished Club Program Report:
             To Date: "26"
         Overall:
             Current: "4"
-            Distinguished: "No"
+            Select Distinguished: "No"
             Target: "10"
             Year: 2024-2025
     Education:
