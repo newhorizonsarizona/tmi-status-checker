@@ -22,8 +22,6 @@ jobs:
     - name: Check code
       run: make lint
 
-    - name: Test Generate DCP Report Yaml
-      run: make generate-report
+    - name: Test Generate DCP Report Yaml/Screenshot and the Notification message using Chat GPT API
+      run: make test
 
-    - name: Test Generate DCP Report Screenshot
-      run: make generate-screenshot

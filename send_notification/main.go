@@ -105,67 +105,6 @@ type DCPReport struct {
 	} `yaml:"Distinguished Club Program Report"`
 }
 
-var questionBank = map[int]string{
-	7: `In two paragraphs with a formal encouraging tone highlight the club achievements last term, July through June. 
-		The first paragraph praises the club for their overall achievements last term, and the second
-		encourages the club to create a Distinguished Club Success plan and work towards the goals for the next term.
-		`,
-	8: `In two concise to the point paragraphs with a jovial encouraging tone highlight the club achievements. 
-		The first paragraph praises the club for their overall achievements in the first month of the new term, and the second
-		encourages the club to work on the goals defined in the Distinguished Club Success plan in the ongoing term.
-		`,
-	9: `In one concise to the point paragraph with a jovial encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership in the first two months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	10: `In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership in the first three months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	11: `In one concise to the point paragraph with a jovial encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership first four months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	12: `In one concise paragraph with a casual holiday sprit, highlight the club achievements so far. 
-		The first part praises the club for their overall achievements and membership, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	1: `In one concise to the point paragraph with a formal encouraging tone highlight the club achievements in the first
-		six months of the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	2: `In one concise to the point paragraph with an informal encouraging tone highlight the club achievements in the current 
-		term, July through January. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	3: `In one concise to the point paragraph with an jovial encouraging tone highlight the club achievements over the last
-		eigth months. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	4: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements over the last
-		nine months. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	5: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements with just 
-		two months to go in the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-	6: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements with just 
-		one month to go in the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
-		`,
-}
-
 func main() {
 	// Open the YAML file
 	file, err := os.Open("../reports/dcp_report.yaml")
@@ -213,9 +152,10 @@ func generateMessageCard() map[string]interface{} {
 	}
 	currentTime := time.Now()
 
-	question := questionBank[int(currentTime.Month())] + string(yaml)
+	question := util.QuestionBank[int(currentTime.Month())] + string(yaml)
 	statusMessage = util.Chat(question)
 
+	clubNumber := os.Getenv("CLUB_NUMBER")
 	messageCard := map[string]interface{}{
 		"type": "message",
 		"attachments": []map[string]interface{}{
@@ -258,7 +198,7 @@ func generateMessageCard() map[string]interface{} {
 						{
 							"type":  "Action.OpenUrl",
 							"title": "Learn More",
-							"url":   "https://dashboards.toastmasters.org/ClubReport.aspx?id=00006350",
+							"url":   "https://dashboards.toastmasters.org/ClubReport.aspx?id="+clubNumber,
 						},
 					},
 				},
