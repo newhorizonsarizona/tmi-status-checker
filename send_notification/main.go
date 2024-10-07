@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	util "github.com/newhorizonsarizona/tmi-status-checker/util"
 
@@ -149,13 +150,12 @@ func generateMessageCard() map[string]interface{} {
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}
-	question := `
-				In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
-				The first part praises the club for their overall achievements and membership, and 
-				the second part commends the club for Distinguished Club Program goals achieved in each category.
-				` + string(yaml)
+	currentTime := time.Now()
+
+	question := util.QuestionBank[int(currentTime.Month())] + string(yaml)
 	statusMessage = util.Chat(question)
 
+	clubNumber := os.Getenv("CLUB_NUMBER")
 	messageCard := map[string]interface{}{
 		"type": "message",
 		"attachments": []map[string]interface{}{
@@ -198,7 +198,7 @@ func generateMessageCard() map[string]interface{} {
 						{
 							"type":  "Action.OpenUrl",
 							"title": "Learn More",
-							"url":   "https://dashboards.toastmasters.org/ClubReport.aspx?id=00006350",
+							"url":   "https://dashboards.toastmasters.org/ClubReport.aspx?id="+clubNumber,
 						},
 					},
 				},

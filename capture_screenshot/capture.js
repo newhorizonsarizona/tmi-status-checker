@@ -7,7 +7,7 @@ const puppeteer = require("puppeteer");
 
   // Navigate to the webpage
   await page.goto(
-    "https://dashboards.toastmasters.org/ClubReport.aspx?id=00006350",
+    "https://dashboards.toastmasters.org/ClubReport.aspx?id="+process.env.CLUB_NUMBER,
   );
 
   // Wait for the element with the class name to load (modify the class selector as needed)

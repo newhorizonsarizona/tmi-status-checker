@@ -23,7 +23,8 @@ func main() {
 		nextYear = nextYear - 1
 	}
 	tmYear := strconv.Itoa(currentYear) + "-" + strconv.Itoa(nextYear)
-	clubReportUrl := "https://dashboards.toastmasters.org/ClubReport.aspx?id=00006350"
+	clubNumber := os.Getenv("CLUB_NUMBER")
+	clubReportUrl := "https://dashboards.toastmasters.org/ClubReport.aspx?id=" + clubNumber
 	dcpGoals := make(map[string]map[string]map[string]string)
 	// On every <a> element which has href attribute call callback
 	goalsFound := false
