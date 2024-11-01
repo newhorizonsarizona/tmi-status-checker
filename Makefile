@@ -38,4 +38,4 @@ test: generate-all
 	go run main.go
 
 send-notification:
-	pushd $(SEND_NOTIFICATION) && go run main.go && popd
+	pushd CLUB_NUMBER=$(CLUB_NUMBER) && $(SEND_NOTIFICATION) && go run main.go && popd
