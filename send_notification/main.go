@@ -136,13 +136,13 @@ func generateMessageCard() map[string]interface{} {
 	statusSubheading := "Achieved " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target
 	statusMessage := "Congratulations on your achievements!"
 	if dcpReport.DCPReport.DCPStatus.Overall.Distinguished == "Yes" {
-		statusSubheading += "Achieved Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
+		statusSubheading = "Achieved Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
 	}
 	if dcpReport.DCPReport.DCPStatus.Overall.SelectDistinguished == "Yes" {
-		statusSubheading += "Achieved Select Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
+		statusSubheading = "Achieved Select Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
 	}
 	if dcpReport.DCPReport.DCPStatus.Overall.PresidentsDistinguished == "Yes" {
-		statusSubheading += "Achieved President's Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
+		statusSubheading = "Achieved President's Distinguished Status " + dcpReport.DCPReport.DCPStatus.Overall.Current + " of " + dcpReport.DCPReport.DCPStatus.Overall.Target + " goals"
 	}
 
 	// Open the YAML file
