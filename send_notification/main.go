@@ -189,7 +189,7 @@ func generateMessageCard() map[string]interface{} {
 						},
 						{
 							"type":        "Image",
-							"url":         "https://github.com/newhorizonsarizona/tmi-status-checker/blob/main/dcp_report.png?raw=true",
+							"url":         "https://raw.githubusercontent.com/newhorizonsarizona/tmi-status-checker/refs/heads/main/reports/dcp_report.png",
 							"pixelWidth":  400,
 							"pixelHeight": 500,
 						},
