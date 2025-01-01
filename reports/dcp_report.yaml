@@ -12,9 +12,9 @@ Distinguished Club Program Report:
         Membership:
             Base: "22"
             Required: "20"
-            To Date: "26"
+            To Date: "27"
         Overall:
-            Current: "5"
+            Current: "6"
             Distinguished: "Yes"
             Target: "10"
             Year: 2024-2025
@@ -24,8 +24,8 @@ Distinguished Club Program Report:
             status: 2 Level 1s needed
             target: "4"
         Level 2 awards:
-            achieved: "0"
-            status: 2 Level 2s needed
+            achieved: "2"
+            status: Achieved
             target: "2"
         Level 3 awards:
             achieved: "0"
@@ -45,7 +45,7 @@ Distinguished Club Program Report:
             target: "1"
     Membership:
         More new members:
-            achieved: "9"
+            achieved: "10"
             status: Achieved
             target: "4"
         New members:
@@ -58,6 +58,6 @@ Distinguished Club Program Report:
             status: First Training Period Achieved
             target: "4"
         Club officers trained November-February:
-            achieved: "0"
-            status: Second Training Period 4 needed
+            achieved: "1"
+            status: Second Training Period 3 needed
             target: "4"
