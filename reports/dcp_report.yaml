@@ -12,16 +12,16 @@ Distinguished Club Program Report:
         Membership:
             Base: "22"
             Required: "20"
-            To Date: "27"
+            To Date: "30"
         Overall:
-            Current: "6"
-            Distinguished: "Yes"
+            Current: "7"
+            Select Distinguished: "Yes"
             Target: "10"
             Year: 2024-2025
     Education:
         Level 1 awards:
-            achieved: "2"
-            status: 2 Level 1s needed
+            achieved: "3"
+            status: 1 Level 1 needed
             target: "4"
         Level 2 awards:
             achieved: "2"
@@ -31,7 +31,7 @@ Distinguished Club Program Report:
             achieved: "0"
             status: 2 Level 3s needed
             target: "2"
-        Level 4; Level 5; or DTM award:
+        Level 4; Path Completion; or DTM award:
             achieved: "1"
             status: Achieved
             target: "1"
@@ -39,13 +39,13 @@ Distinguished Club Program Report:
             achieved: "0"
             status: 2 Level 2s needed
             target: "2"
-        One more Level 4; Level 5; or DTM award:
+        One more Level 4; Path Completion; or DTM award:
             achieved: "1"
             status: Achieved
             target: "1"
     Membership:
         More new members:
-            achieved: "10"
+            achieved: "13"
             status: Achieved
             target: "4"
         New members:
@@ -55,9 +55,9 @@ Distinguished Club Program Report:
     Training:
         Club officers trained June-August:
             achieved: "4"
-            status: First Training Period Achieved
+            status: Achieved
             target: "4"
         Club officers trained November-February:
-            achieved: "1"
-            status: Second Training Period 3 needed
+            achieved: "5"
+            status: ""
             target: "4"
