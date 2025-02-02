@@ -2,7 +2,7 @@ const puppeteer = require("puppeteer");
 
 (async () => {
   // Launch a headless browser
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
 
   // Navigate to the webpage
