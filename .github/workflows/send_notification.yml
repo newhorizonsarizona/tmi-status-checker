@@ -13,7 +13,10 @@ on:
         - main
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  CHANNEL_WEBHOOK_URL: ${{ secrets.CHANNEL_WEBHOOK_URL }}
+  EMAIL_ID: ${{ env.EMAIL_ID }}
+  EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+  CLUB_NUMBER: ${{ env.CLUB_NUMBER }}
+  CLUB_NAME: ${{ env.CLUB_NAME }}
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
