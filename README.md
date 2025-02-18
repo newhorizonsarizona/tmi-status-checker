@@ -94,6 +94,6 @@ Generate Club DCP report in Yaml and capture the Club DCP report screenthot
 
 `make generate-all`
 
-Use the generated Yaml report and summarize the achievements using Chat GPT API. Send an announcement message to the MS Teams channel with the summary and image captured.
+Use the generated Yaml report and summarize the achievements using Chat GPT API. Send an announcement message via Email with the summary and image captured.
 
 `make send-notification`

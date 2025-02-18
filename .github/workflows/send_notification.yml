@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Send the DCP Report Announcement to MS Teams
+name: Send the DCP Report Announcement via Email
 
 # Controls when the workflow will run
 on:
@@ -28,5 +28,5 @@ jobs:
       - name: Install tools
         run: make install-tools
 
-      - name: Send the notification to the MS Teams Channel
+      - name: Send the notification via Email
         run: make -e send-notification

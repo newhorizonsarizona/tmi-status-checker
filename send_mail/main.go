@@ -13,12 +13,12 @@ func main() {
 	m := gomail.NewMessage()
 	email_from := os.Getenv("EMAIL_ID")
 	email_password := os.Getenv("EMAIL_PASSWORD")
-	//club_number := os.Getenv("CLUB_NUMBER")
+	club_number := os.Getenv("CLUB_NUMBER")
 	club_name := os.Getenv("CLUB_NAME")
 	//email_to := "members-" + club_number + "@toastmastersclubs.org"
 	email_to := "anand_vijayan@yahoo.com" //TODO: Remove after testing
 	email_subject := notify.GetSummary()
-	email_body := generateMessageBody(club_name)
+	email_body := generateMessageBody(club_number, club_name)
 	m.SetHeader("From", email_from)
 	m.SetHeader("To", email_to)
 	m.SetHeader("Subject", "DCP Report: "+email_subject)
