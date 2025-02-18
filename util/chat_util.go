@@ -95,7 +95,7 @@ func Chat(question string) string {
 	client := openai.NewClient(api_key)
 	// Define your request
 	request := openai.ChatCompletionRequest{
-		Model: openai.GPT4oMini,
+		Model: openai.GPT4Turbo,
 		Messages: []openai.ChatCompletionMessage{
 			{
 				Role:    openai.ChatMessageRoleUser,
