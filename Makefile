@@ -1,12 +1,11 @@
 SHELL := /bin/bash -o pipefail
 
-CLUB_NUMBER=6350
+CLUB_NUMBER?=1231280
 APP_NAME = tmi-status-checker
 PACKAGE_NAME = $(APP_NAME)
-SUBSCRIPTION_ID = eb792c5c-94c2-48d5-b355-c807ecdbe88e
 WEB_SCRAPER=web_scraper
 CAPTURE_SCREENSHOT=capture_screenshot
-SEND_NOTIFICATION=send_notification
+SEND_NOTIFICATION=send_mail
 
 .PHONY: test test-* format build
 
@@ -17,7 +16,7 @@ format:
 lint:
 	gofmt -l .
 
-install-tools:
+install-ubuntu-libs:
 	sudo add-apt-repository -y ppa:longsleep/golang-backports
 	sudo apt update -y
 	sudo apt install -y golang-go
@@ -33,6 +32,8 @@ install-tools:
 	npm install --save-dev puppeteer
 	npm install -g prettier
 
+install-tools: install-ubuntu-libs install-npm-tools
+
 generate-report:
 	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(WEB_SCRAPER) && go run main.go && popd
 
@@ -46,3 +47,4 @@ test: generate-all
 
 send-notification:
 	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(SEND_NOTIFICATION) && go run main.go && popd
+
