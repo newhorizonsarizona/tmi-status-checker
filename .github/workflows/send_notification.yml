@@ -20,6 +20,7 @@ env:
 jobs:
   # This workflow contains a single job called "build"
   send-notification:
+    if: github.repository == 'newhorizonsarizona/tmi-status-checker'
     runs-on: ubuntu-latest
 
     steps:
