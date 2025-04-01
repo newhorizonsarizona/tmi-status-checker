@@ -29,7 +29,7 @@ install-tools:
 							libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 \
 							libxss1 libxtst6 ca-certificates fonts-liberation libnss3 lsb-release \
     							xdg-utils wget ca-certificates
- 	sudo update-ca-certificates
+	sudo update-ca-certificates
 	npm install --save-dev puppeteer
 	npm install -g prettier
 
