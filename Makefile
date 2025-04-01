@@ -27,7 +27,8 @@ install-ubuntu-libs:
 							libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 \
 							libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 \
 							libxss1 libxtst6 ca-certificates fonts-liberation libnss3 lsb-release \
-    							xdg-utils wget ca-certificates
+							xdg-utils wget ca-certificates
+	sudo cp certs/sfroot-g2.crt /usr/local/share/ca-certificates
 	sudo update-ca-certificates
 	npm install --save-dev puppeteer
 	npm install -g prettier
