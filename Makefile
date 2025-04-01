@@ -30,6 +30,8 @@ install-ubuntu-libs:
 							xdg-utils wget ca-certificates
 	sudo cp certs/sfroot-g2.crt /usr/local/share/ca-certificates
 	sudo update-ca-certificates
+
+install-npm-tools:
 	npm install --save-dev puppeteer
 	npm install -g prettier
 
