@@ -1,7 +1,9 @@
 package main
 
 import (
+	"crypto/tls"
 	"log"
+	"net/http"
 	"os"
 	"strconv"
 	"strings"
@@ -124,6 +126,9 @@ func main() {
 		log.Fatalf("Request URL:", r.Request.URL, "failed with response:", r, "\nError:", err)
 	})
 
+	c.WithTransport(&http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	})
 	c.Visit(clubReportUrl)
 	currentStatus := ""
 	for goalTarget, statusName := range dcpStatusRef {
