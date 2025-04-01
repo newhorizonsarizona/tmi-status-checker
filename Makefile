@@ -28,7 +28,7 @@ install-ubuntu-libs:
 							libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 \
 							libxss1 libxtst6 ca-certificates fonts-liberation libnss3 lsb-release \
 							xdg-utils wget ca-certificates
-	sudo cp certs/sf*.crt /usr/local/share/ca-certificates
+	sudo cp certs/sf*.* /usr/local/share/ca-certificates
 	sudo update-ca-certificates
 
 install-npm-tools:
