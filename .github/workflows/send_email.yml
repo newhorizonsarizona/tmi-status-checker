@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Send the DCP Report Announcement 
+name: Send the DCP Report Announcement Email
 
 # Controls when the workflow will run
 on:
@@ -13,13 +13,16 @@ on:
         - main
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  CHANNEL_WEBHOOK_URL: ${{ secrets.CHANNEL_WEBHOOK_URL }}
+  EMAIL_ID: ${{ vars.EMAIL_ID }}
+  EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
   CLUB_NUMBER: ${{ vars.CLUB_NUMBER }}
+  CLUB_NAME: ${{ vars.CLUB_NAME }}
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   send-notification:
+    if: github.repository == 'd2tm/tmi-status-checker'
     runs-on: ubuntu-latest
 
     steps:
@@ -29,5 +32,5 @@ jobs:
       - name: Install tools
         run: make install-tools
 
-      - name: Send the notification
+      - name: Send the notification email
         run: make -e send-notification

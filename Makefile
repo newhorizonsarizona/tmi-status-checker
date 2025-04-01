@@ -1,6 +1,6 @@
 SHELL := /bin/bash -o pipefail
 
-CLUB_NUMBER?=1231280
+CLUB_NUMBER?=6350
 APP_NAME = tmi-status-checker
 PACKAGE_NAME = $(APP_NAME)
 WEB_SCRAPER=web_scraper

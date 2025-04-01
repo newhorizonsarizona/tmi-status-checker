@@ -11,7 +11,8 @@ on:
   workflow_dispatch:
 env:
   GITHUB_TOKEN: ${{ secrets.TMI_DCP_STATUS_API_TOKEN }}
-  
+  CLUB_NUMBER: ${{ vars.CLUB_NUMBER }}
+    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"

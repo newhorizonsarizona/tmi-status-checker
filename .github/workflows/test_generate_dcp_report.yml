@@ -4,6 +4,8 @@
 name: Test Generate DCP Report
 
 on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs at 12am UTC every Sunday
   push:
     branches: [ "main" ]
   pull_request:
