@@ -5,7 +5,7 @@ APP_NAME = tmi-status-checker
 PACKAGE_NAME = $(APP_NAME)
 WEB_SCRAPER=web_scraper
 CAPTURE_SCREENSHOT=capture_screenshot
-SEND_NOTIFICATION=send_mail
+SEND_NOTIFICATION?=send_notification
 
 .PHONY: test test-* format build
 
