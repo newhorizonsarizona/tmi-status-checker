@@ -6,6 +6,8 @@ replace github.com/newhorizonsarizona/tmi-status-checker/util => ../util
 
 replace github.com/d2tm/tmi-status-checker/util/notify => ../util/notify
 
+require github.com/d2tm/tmi-status-checker/util/notify v0.0.0-00010101000000-000000000000
+
 require (
 	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20250202012046-4070b311deda // indirect
 	github.com/sashabaranov/go-openai v1.31.0 // indirect
