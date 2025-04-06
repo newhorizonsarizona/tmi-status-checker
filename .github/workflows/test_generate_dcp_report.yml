@@ -13,6 +13,7 @@ on:
 
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  CLUB_NUMBER: ${{ vars.CLUB_NUMBER }}
 
 jobs:
 
