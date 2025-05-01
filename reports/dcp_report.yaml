@@ -10,18 +10,32 @@ Distinguished Club Program Report:
             target: "Y"
     DCP Status:
         Membership:
+<<<<<<< HEAD
             Base: ""
             Required: "20"
             To Date: ""
         Overall:
             Current: "2"
             Distinguished: "No"
+=======
+            Base: "8"
+            Required: "20"
+            To Date: "8"
+        Overall:
+            Current: "5"
+            Distinguished: "Yes"
+>>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
             Target: "10"
             Year: 2025-2026
     Education:
         Level 1 awards:
+<<<<<<< HEAD
             achieved: "1"
             status: 3 Level 1s needed
+=======
+            achieved: "2"
+            status: 2 Level 1s needed
+>>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
             target: "4"
         Level 2 awards:
             achieved: "0"
@@ -45,14 +59,20 @@ Distinguished Club Program Report:
             target: "1"
     Membership:
         More new members:
+<<<<<<< HEAD
             achieved: "0"
             status: 4 New Members needed
+=======
+            achieved: "1"
+            status: 3 New Members needed
+>>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
             target: "4"
         New members:
             achieved: "3"
             status: 1 New Member needed
             target: "4"
     Training:
+<<<<<<< HEAD
         Club officer roles trained June–August:
             achieved: "7"
             status: First Training Period Achieved
@@ -60,4 +80,13 @@ Distinguished Club Program Report:
         Club officer roles trained November–February:
             achieved: "0"
             status: Second Training Period 4 needed
+=======
+        Club officers trained June-August:
+            achieved: "6"
+            status: Achieved
+            target: "4"
+        Club officers trained November-February:
+            achieved: "6"
+            status: ""
+>>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
             target: "4"
