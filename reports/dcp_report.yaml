@@ -5,27 +5,27 @@ Distinguished Club Program Report:
             status: ""
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "2"
+            achieved: "1"
             status: Achieved
             target: "Y"
     DCP Status:
         Membership:
-            Base: "22"
+            Base: "8"
             Required: "20"
-            To Date: "34"
+            To Date: "8"
         Overall:
-            Current: "9"
-            President's Distinguished: "Yes"
+            Current: "5"
+            Distinguished: "Yes"
             Target: "10"
             Year: 2024-2025
     Education:
         Level 1 awards:
-            achieved: "4"
-            status: Achieved
+            achieved: "2"
+            status: 2 Level 1s needed
             target: "4"
         Level 2 awards:
-            achieved: "2"
-            status: Achieved
+            achieved: "0"
+            status: 2 Level 2s needed
             target: "2"
         Level 3 awards:
             achieved: "1"
@@ -36,8 +36,8 @@ Distinguished Club Program Report:
             status: Achieved
             target: "1"
         More Level 2 awards:
-            achieved: "2"
-            status: Achieved
+            achieved: "0"
+            status: 2 Level 2s needed
             target: "2"
         One more Level 4; Path Completion; or DTM award:
             achieved: "1"
@@ -45,8 +45,8 @@ Distinguished Club Program Report:
             target: "1"
     Membership:
         More new members:
-            achieved: "17"
-            status: Achieved
+            achieved: "1"
+            status: 3 New Members needed
             target: "4"
         New members:
             achieved: "4"
@@ -54,10 +54,10 @@ Distinguished Club Program Report:
             target: "4"
     Training:
         Club officers trained June-August:
-            achieved: "4"
+            achieved: "6"
             status: Achieved
             target: "4"
         Club officers trained November-February:
-            achieved: "7"
+            achieved: "6"
             status: ""
             target: "4"
