@@ -30,12 +30,17 @@ Distinguished Club Program Report:
     Education:
         Level 1 awards:
 <<<<<<< HEAD
+<<<<<<< HEAD
             achieved: "1"
             status: 3 Level 1s needed
 =======
             achieved: "2"
             status: 2 Level 1s needed
 >>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
+=======
+            achieved: "3"
+            status: 1 Level 1 needed
+>>>>>>> 1fe7533 (Auto commit: updated the club dcp report files)
             target: "4"
         Level 2 awards:
             achieved: "0"
