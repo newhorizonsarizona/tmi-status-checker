@@ -2,62 +2,62 @@ Distinguished Club Program Report:
     Administration:
         Club officer list on time:
             achieved: "1"
-            status: ""
+            status: On-time officer list Achieved
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "2"
-            status: Achieved
+            achieved: "0"
+            status: On-time dues-renewal needed
             target: "Y"
     DCP Status:
         Membership:
-            Base: "22"
+            Base: ""
             Required: "20"
-            To Date: "32"
+            To Date: ""
         Overall:
-            Current: "10"
-            Distinguished: "Yes"
+            Current: "1"
+            Distinguished: "No"
             Target: "10"
             Year: 2025-2026
     Education:
         Level 1 awards:
-            achieved: "6"
-            status: Achieved
+            achieved: "0"
+            status: 4 Level 1s needed
             target: "4"
         Level 2 awards:
-            achieved: "2"
-            status: Achieved
+            achieved: "0"
+            status: 2 Level 2s needed
             target: "2"
         Level 3 awards:
-            achieved: "3"
-            status: Achieved
+            achieved: "1"
+            status: 1 Level 3 needed
             target: "2"
         Level 4; Path Completion; or DTM award:
             achieved: "1"
             status: Achieved
             target: "1"
         More Level 2 awards:
-            achieved: "2"
-            status: Achieved
+            achieved: "0"
+            status: 2 Level 2s needed
             target: "2"
         One more Level 4; Path Completion; or DTM award:
-            achieved: "1"
-            status: Achieved
+            achieved: "0"
+            status: 1 more Level 4, Path Completion, or DTM needed
             target: "1"
     Membership:
         More new members:
-            achieved: "21"
-            status: Achieved
+            achieved: "0"
+            status: 4 New Members needed
             target: "4"
         New members:
-            achieved: "4"
-            status: Achieved
+            achieved: "0"
+            status: 4 New Members needed
             target: "4"
     Training:
-        Club officers trained June-August:
-            achieved: "4"
-            status: Achieved
+        Club officer roles trained June–August:
+            achieved: "3"
+            status: First Training Period 1 needed
             target: "4"
-        Club officers trained November-February:
-            achieved: "7"
-            status: ""
+        Club officer roles trained November–February:
+            achieved: "0"
+            status: Second Training Period 4 needed
             target: "4"
