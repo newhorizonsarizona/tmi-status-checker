@@ -2,59 +2,26 @@ Distinguished Club Program Report:
     Administration:
         Club officer list on time:
             achieved: "1"
-            status: On-time officer list Achieved
+            status: ""
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "0"
-            status: On-time dues-renewal needed
+            achieved: "1"
+            status: Achieved
             target: "Y"
     DCP Status:
         Membership:
-<<<<<<< HEAD
-<<<<<<< HEAD
             Base: ""
             Required: "20"
             To Date: ""
         Overall:
-            Current: "2"
+            Current: "1"
             Distinguished: "No"
-=======
-            Base: "8"
-=======
-            Base: ""
->>>>>>> 495490f (Auto commit: updated the club dcp report files)
-            Required: "20"
-            To Date: ""
-        Overall:
-<<<<<<< HEAD
-            Current: "5"
-            Distinguished: "Yes"
->>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
-=======
-            Current: "0"
-            Distinguished: "No"
->>>>>>> 495490f (Auto commit: updated the club dcp report files)
             Target: "10"
             Year: 2025-2026
     Education:
         Level 1 awards:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            achieved: "1"
-            status: 3 Level 1s needed
-=======
-            achieved: "2"
-            status: 2 Level 1s needed
->>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
-=======
-            achieved: "3"
-            status: 1 Level 1 needed
->>>>>>> 1fe7533 (Auto commit: updated the club dcp report files)
-=======
             achieved: "0"
             status: 4 Level 1s needed
->>>>>>> 495490f (Auto commit: updated the club dcp report files)
             target: "4"
         Level 2 awards:
             achieved: "0"
@@ -78,52 +45,19 @@ Distinguished Club Program Report:
             target: "1"
     Membership:
         More new members:
-<<<<<<< HEAD
-<<<<<<< HEAD
             achieved: "0"
             status: 4 New Members needed
-=======
-            achieved: "1"
-            status: 3 New Members needed
->>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
             target: "4"
         New members:
-            achieved: "3"
-            status: 1 New Member needed
+            achieved: "1"
+            status: 3 New Members needed
             target: "4"
     Training:
-<<<<<<< HEAD
         Club officer roles trained June–August:
             achieved: "7"
             status: First Training Period Achieved
             target: "4"
         Club officer roles trained November–February:
-            achieved: "0"
-            status: Second Training Period 4 needed
-=======
-        Club officers trained June-August:
-            achieved: "6"
-            status: Achieved
-            target: "4"
-        Club officers trained November-February:
-            achieved: "6"
-            status: ""
->>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
-=======
-            achieved: "0"
-            status: 4 New Members needed
-            target: "4"
-        New members:
-            achieved: "0"
-            status: 4 New Members needed
-            target: "4"
-    Training:
-        Club officer roles trained June–August:
-            achieved: "3"
-            status: First Training Period 1 needed
-            target: "4"
-        Club officer roles trained November–February:
-            achieved: "0"
-            status: Second Training Period 4 needed
->>>>>>> 495490f (Auto commit: updated the club dcp report files)
+            achieved: "1"
+            status: Second Training Period 3 needed
             target: "4"
