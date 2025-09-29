@@ -28,7 +28,7 @@ func main() {
 	if len(cc_addrs) > 0 {
 		m.SetHeader("Cc", cc_addrs...)
 	}
-	m.SetHeader("Subject", "DCP Report: "+email_subject)
+	m.SetHeader("Subject", "DCP Report ("+club_name+"): "+email_subject)
 	m.SetBody("text/plain", email_body)
 	m.Attach("../reports/dcp_report.png")
 	d := gomail.NewDialer("email-smtp.us-west-2.amazonaws.com", 587, email_user, email_password)
