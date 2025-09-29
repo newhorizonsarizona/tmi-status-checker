@@ -26,7 +26,7 @@ env:
 jobs:
   # This workflow contains a single job called "build"
   send-notification:
-    if: github.repository == 'd2tm/tmi-status-checker'
+    if: contains(github.repository, 'd2tm/tmi-status-checker')
     runs-on: ubuntu-latest
 
     steps:
