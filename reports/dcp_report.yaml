@@ -2,11 +2,11 @@ Distinguished Club Program Report:
     Administration:
         Club officer list on time:
             achieved: "1"
-            status: On-time officer list Achieved
+            status: ""
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "0"
-            status: On-time dues-renewal needed
+            achieved: "1"
+            status: Achieved
             target: "Y"
     DCP Status:
         Membership:
@@ -16,6 +16,7 @@ Distinguished Club Program Report:
             Required: "20"
             To Date: ""
         Overall:
+<<<<<<< HEAD
             Current: "2"
             Distinguished: "No"
 =======
@@ -32,12 +33,16 @@ Distinguished Club Program Report:
 >>>>>>> 53cd375 (Auto commit: updated the club dcp report files)
 =======
             Current: "0"
+=======
+            Current: "1"
+>>>>>>> 7562425 (Auto commit: updated the club dcp report files)
             Distinguished: "No"
 >>>>>>> 495490f (Auto commit: updated the club dcp report files)
             Target: "10"
             Year: 2025-2026
     Education:
         Level 1 awards:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55,14 +60,18 @@ Distinguished Club Program Report:
             achieved: "0"
             status: 4 Level 1s needed
 >>>>>>> 495490f (Auto commit: updated the club dcp report files)
+=======
+            achieved: "1"
+            status: 3 Level 1s needed
+>>>>>>> 7562425 (Auto commit: updated the club dcp report files)
             target: "4"
         Level 2 awards:
             achieved: "1"
             status: 1 Level 2 needed
             target: "2"
         Level 3 awards:
-            achieved: "1"
-            status: 1 Level 3 needed
+            achieved: "0"
+            status: 2 Level 3s needed
             target: "2"
         Level 4; Path Completion; or DTM award:
             achieved: "0"
@@ -119,7 +128,7 @@ Distinguished Club Program Report:
             target: "4"
     Training:
         Club officer roles trained June–August:
-            achieved: "4"
+            achieved: "6"
             status: First Training Period Achieved
             target: "4"
         Club officer roles trained November–February:
