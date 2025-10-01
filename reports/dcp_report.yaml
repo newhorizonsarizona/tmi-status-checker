@@ -2,11 +2,11 @@ Distinguished Club Program Report:
     Administration:
         Club officer list on time:
             achieved: "1"
-            status: On-time officer list Achieved
+            status: ""
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "0"
-            status: On-time dues-renewal needed
+            achieved: "1"
+            status: Achieved
             target: "Y"
     DCP Status:
         Membership:
@@ -14,14 +14,14 @@ Distinguished Club Program Report:
             Required: "20"
             To Date: ""
         Overall:
-            Current: "1"
+            Current: "2"
             Distinguished: "No"
             Target: "10"
             Year: 2025-2026
     Education:
         Level 1 awards:
-            achieved: "0"
-            status: 4 Level 1s needed
+            achieved: "1"
+            status: 3 Level 1s needed
             target: "4"
         Level 2 awards:
             achieved: "0"
