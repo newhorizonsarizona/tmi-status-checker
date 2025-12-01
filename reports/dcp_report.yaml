@@ -132,7 +132,12 @@ Distinguished Club Program Report:
             status: First Training Period Achieved
             target: "4"
         Club officer roles trained November–February:
+<<<<<<< HEAD
             achieved: "0"
             status: Second Training Period 4 needed
 >>>>>>> 495490f (Auto commit: updated the club dcp report files)
+=======
+            achieved: "1"
+            status: Second Training Period 3 needed
+>>>>>>> 6af6d1e (Auto commit: updated the club dcp report files)
             target: "4"
