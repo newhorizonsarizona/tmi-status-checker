@@ -6,6 +6,8 @@ PACKAGE_NAME = $(APP_NAME)
 WEB_SCRAPER=web_scraper
 CAPTURE_SCREENSHOT=capture_screenshot
 SEND_NOTIFICATION?=send_notification
+UTIL=util
+NOTIFY=util/notify
 
 .PHONY: test test-* format build
 
@@ -48,6 +50,10 @@ update-npm-packages:
 update-go-modules:
 	go get -u ./...
 	go mod tidy
+	pushd $(UTIL) && go get -u ./... && go mod tidy && popd
+	pushd $(NOTIFY) && go get -u ./... && go mod tidy && popd
+	pushd $(WEB_SCRAPER) && go get -u . && go mod tidy && popd
+	pushd $(SEND_NOTIFICATION) && go get -u . && go mod tidy && popd
 
 fix-vulns: update-npm-packages update-go-modules
 
