@@ -29,7 +29,7 @@ func main() {
 		m.SetHeader("Cc", cc_addrs...)
 	}
 	m.SetHeader("Subject", "DCP Report ("+club_name+"): "+email_subject)
-	m.SetBody("text/plain", email_body)
+	m.SetBody("text/html", email_body)
 	m.Attach("../reports/dcp_report.png")
 	d := gomail.NewDialer("email-smtp.us-west-2.amazonaws.com", 587, email_user, email_password)
 
@@ -42,14 +42,28 @@ func generateMessageBody(club_number string, club_name string) string {
 	if club_name == "" {
 		club_name = "Toastmasters Club"
 	}
-	return fmt.Sprintf(`
-Dear %s Members,
-
+	message := notify.GetMessage()
+	message = strings.ReplaceAll(message, "```html", "")
+	message = strings.ReplaceAll(message, "```", "")
+	return fmt.Sprintf(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Achievements Overview</title>
+</head>
+<body>
+Dear <b>%s</b> Members,<br/>
+<br/>
+Thank you for everything you are doing for the club. The toastmaster year runs from 1st July through 30th June
+and it behooves all members to help the club succeed. Here is this month's distinguished club program (DCP) report.
+<br/>
 %s
-
-https://dashboards.toastmasters.org/ClubReport.aspx?id=%s
-
-Best Regards,
-Executive Team
-	`, club_name, notify.GetMessage(), club_number)
+View the club <a href='https://dashboards.toastmasters.org/ClubReport.aspx?id=%s'>DCP Report</a>.<br/>
+<br/>
+Best Regards,<br/>
+<b>Executive Team</b>
+</body>
+</html>
+`, club_name, message, club_number)
 }

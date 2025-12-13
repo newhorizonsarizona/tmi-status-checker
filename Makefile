@@ -37,6 +37,20 @@ install-npm-tools:
 
 install-tools: install-ubuntu-libs install-npm-tools
 
+update-npm-packages:
+	# Install npm-check-updates if you don't have it globally
+	sudo npm install -g npm-check-updates
+	# Check for updates and update package.json
+	npx ncu -u
+	# Install the new versions of all updated packages
+	npm install
+
+update-go-modules:
+	go get -u ./...
+	go mod tidy
+
+fix-vulns: update-npm-packages update-go-modules
+
 generate-report:
 	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(WEB_SCRAPER) && go run main.go && popd
 
