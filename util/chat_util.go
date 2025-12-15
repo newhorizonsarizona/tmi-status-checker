@@ -11,63 +11,86 @@ import (
 )
 
 var QuestionBank = map[int]string{
-	7: `In two paragraphs with a formal encouraging tone highlight the club achievements last term, July through June. 
-		The first paragraph praises the club for their overall achievements last term, and the second
-		encourages the club to create a Distinguished Club Success plan and work towards the goals for the next term.
+	7: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements last year. 
+		The first section with a heading praises the club for their overall achievements and membership from July through June. The  
+		second section with a heading talks about the the goals that need to be set for the toastmaster year. Add a reminders 
+		to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or reinstated members 
+		with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
-	8: `In two concise to the point paragraphs with a jovial encouraging tone highlight the club achievements. 
-		The first paragraph praises the club for their overall achievements in the first month of the new term, and the second
-		encourages the club to work on the goals defined in the Distinguished Club Success plan in the ongoing term.
+	8: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements in the month of July. The  
+		second section with a heading talks about the the goals that need to be set for the toastmaster year. Add a reminders 
+		to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or reinstated members 
+		with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
-	9: `In one concise to the point paragraph with a jovial encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership in the first two months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	9: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements from Jul to Aug. The second
+		section with a heading talks about the the goals that need to be completed from Sep to Jun, leave out the June-Aug training. 
+		Add a reminders to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or 
+		reinstated members with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
-	10: `In one concise to the point paragraph with a formal encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership in the first three months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	10: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Sep. The second 
+		section with a heading talks about the goals that need to be completed from Oct to Jun, leave out the June-Aug training. 
+		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
-	11: `In one concise to the point paragraph with a jovial encouraging tone highlight the club achievements. 
-		The first part praises the club for their overall achievements and membership first four months, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	11: `In two concise sets of bulleted points in a joyful yet professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Oct. The second 
+		section with a heading talks about the goals that need to be completed from Nov to Jun, leave out the June-Aug training. 
+		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
-	12: `In one concise paragraph with a casual holiday sprit, highlight the club achievements so far. 
-		The first part praises the club for their overall achievements and membership, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	12: `In two concise sets of bulleted points in a joyful yet professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Nov. The second 
+		section with a heading talks about the goals that need to be completed from Dec to Jun, leave out the June-Aug training. 
+		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	1: `In one concise to the point paragraph with a formal encouraging tone highlight the club achievements in the first
-		six months of the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	1: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Dec. The second 
+		section with a heading talks about the goals that need to be completed from Jan to Jun, leave out the June-Aug training. 
+		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
+		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	2: `In one concise to the point paragraph with an informal encouraging tone highlight the club achievements in the current 
-		term, July through January. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	2: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Jan. The second 
+		section with a heading talks about the goals that need to be completed from Feb to Jun, leave out the June-Aug training. 
+		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
+		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	3: `In one concise to the point paragraph with an jovial encouraging tone highlight the club achievements over the last
-		eigth months. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	3: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Feb. The second 
+		section with a heading talks about the goals that need to be completed from Mar to Jun, leave out the June-Aug and Nov-Feb trainings. 
+		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
+		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	4: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements over the last
-		nine months. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	4: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Mar. The second 
+		section with a heading talks about the goals that need to be completed from Apr to Jun, leave out the June-Aug and Nov-Feb trainings. 
+		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
+		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	5: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements with just 
-		two months to go in the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	5: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to Apr. The second 
+		section with a heading talks about the goals that need to be completed from May to Jun, leave out the June-Aug and Nov-Feb trainings. 
+		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
+		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
-	6: `In one concise to the point paragraph with an formal encouraging tone highlight the club achievements with just 
-		one month to go in the current term. The first part praises the club for their overall achievements and membership so far, and 
-		the second part commends the club for the Distinguished Club Program goals achieved in each category. Highlight 
-		the fact if the club has attained an overall distinguished status.
+	6: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
+		The first section with a heading praises the club for their overall achievements and membership from Jul to May. The second 
+		section with a heading talks about the goals that need to be completed in Jun, leave out the Nov-Feb training. 
+		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
+		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 }
 
@@ -80,7 +103,7 @@ func Test() {
 	currentTime := time.Now()
 
 	question := QuestionBank[int(currentTime.Month())] + string(yaml)
-	answer := Chat(question)
+	answer := Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
 	log.Println("Answer: ", answer)
 }
 

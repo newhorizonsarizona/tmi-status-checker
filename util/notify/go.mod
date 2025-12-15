@@ -5,11 +5,11 @@ go 1.24.0
 replace github.com/newhorizonsarizona/tmi-status-checker/util => ../../util
 
 require (
-	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20250202012046-4070b311deda
+	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20251201124030-96e3e551883a
 	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
-	github.com/sashabaranov/go-openai v1.31.0 // indirect
-	golang.org/x/time v0.6.0 // indirect
+	github.com/sashabaranov/go-openai v1.41.2 // indirect
+	golang.org/x/time v0.14.0 // indirect
 )

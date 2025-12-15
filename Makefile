@@ -6,6 +6,8 @@ PACKAGE_NAME = $(APP_NAME)
 WEB_SCRAPER=web_scraper
 CAPTURE_SCREENSHOT=capture_screenshot
 SEND_NOTIFICATION?=send_notification
+UTIL=util
+NOTIFY=util/notify
 
 .PHONY: test test-* format build
 
@@ -36,6 +38,24 @@ install-npm-tools:
 	npm install -g prettier
 
 install-tools: install-ubuntu-libs install-npm-tools
+
+update-npm-packages:
+	# Install npm-check-updates if you don't have it globally
+	sudo npm install -g npm-check-updates
+	# Check for updates and update package.json
+	npx ncu -u
+	# Install the new versions of all updated packages
+	npm install
+
+update-go-modules:
+	go get -u ./...
+	go mod tidy
+	pushd $(UTIL) && go get -u ./... && go mod tidy && popd
+	pushd $(NOTIFY) && go get -u ./... && go mod tidy && popd
+	pushd $(WEB_SCRAPER) && go get -u . && go mod tidy && popd
+	pushd $(SEND_NOTIFICATION) && go get -u . && go mod tidy && popd
+
+fix-vulns: update-npm-packages update-go-modules
 
 generate-report:
 	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(WEB_SCRAPER) && go run main.go && popd

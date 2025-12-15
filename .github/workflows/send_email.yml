@@ -13,7 +13,10 @@ on:
         - main
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  EMAIL_ID: ${{ vars.EMAIL_ID }}
+  EMAIL_FROM: ${{ vars.EMAIL_FROM }}
+  EMAIL_TO: ${{ vars.EMAIL_TO }}
+  EMAIL_CC: ${{ vars.EMAIL_CC }}
+  EMAIL_USER: ${{ secrets.EMAIL_USER }}
   EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
   CLUB_NUMBER: ${{ vars.CLUB_NUMBER }}
   CLUB_NAME: ${{ vars.CLUB_NAME }}
@@ -23,7 +26,7 @@ env:
 jobs:
   # This workflow contains a single job called "build"
   send-notification:
-    if: github.repository == 'd2tm/tmi-status-checker'
+    if: contains(github.repository, 'd2tm/tmi-status-checker')
     runs-on: ubuntu-latest
 
     steps:
