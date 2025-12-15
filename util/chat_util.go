@@ -16,93 +16,81 @@ var QuestionBank = map[int]string{
 		second section with a heading talks about the the goals that need to be set for the toastmaster year. Add a reminders 
 		to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or reinstated members 
 		with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
 	8: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements in the month of July. The  
 		second section with a heading talks about the the goals that need to be set for the toastmaster year. Add a reminders 
 		to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or reinstated members 
 		with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
 	9: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements from Jul to Aug. The second
 		section with a heading talks about the the goals that need to be completed from Sep to Jun, leave out the June-Aug training. 
 		Add a reminders to complete the club success plan by Sep 30 and the Smedley Award for adding five new, dual, or 
 		reinstated members with a join date between Aug 1 and Sep 30. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
 	10: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Sep. The second 
 		section with a heading talks about the goals that need to be completed from Oct to Jun, leave out the June-Aug training. 
 		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
 	11: `In two concise sets of bulleted points in a joyful yet professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Oct. The second 
 		section with a heading talks about the goals that need to be completed from Nov to Jun, leave out the June-Aug training. 
 		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf.
 		`,
 	12: `In two concise sets of bulleted points in a joyful yet professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Nov. The second 
 		section with a heading talks about the goals that need to be completed from Dec to Jun, leave out the June-Aug training. 
 		Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about distinguished club
-		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet not a full 
-		document and do not specify the word html or use the body tag.
+		program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	1: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Dec. The second 
 		section with a heading talks about the goals that need to be completed from Jan to Jun, leave out the June-Aug training. 
 		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
 		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	2: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Jan. The second 
 		section with a heading talks about the goals that need to be completed from Feb to Jun, leave out the June-Aug training. 
 		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
 		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	3: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Feb. The second 
 		section with a heading talks about the goals that need to be completed from Mar to Jun, leave out the June-Aug and Nov-Feb trainings. 
 		Add a reminder of the Talk Up Toastmasters member drive for adding five new, dual, or reinstated members with a join date between 
 		Feb 1 and Mar 31. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	4: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Mar. The second 
 		section with a heading talks about the goals that need to be completed from Apr to Jun, leave out the June-Aug and Nov-Feb trainings. 
 		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
 		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	5: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to Apr. The second 
 		section with a heading talks about the goals that need to be completed from May to Jun, leave out the June-Aug and Nov-Feb trainings. 
 		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
 		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 	6: `In two concise sets of bulleted points in a professional encouraging tone highlight the club achievements. 
 		The first section with a heading praises the club for their overall achievements and membership from Jul to May. The second 
 		section with a heading talks about the goals that need to be completed in Jun, leave out the Nov-Feb training. 
 		Add a reminder of the Beat the Clock member drive for adding five new, dual, or reinstated members with a join date between 
 		May 1 and Jun 30. Highlight the fact if the club has attained an overall distinguished status. Add a link to the document about 
-		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. Format as a html snippet 
-		not a full document and do not specify the word html or use the body tag.
+		distinguished club program https://content.toastmasters.org/image/upload/1111-distinguished-club-program.pdf. 
 		`,
 }
 
@@ -115,7 +103,7 @@ func Test() {
 	currentTime := time.Now()
 
 	question := QuestionBank[int(currentTime.Month())] + string(yaml)
-	answer := Chat(question)
+	answer := Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
 	log.Println("Answer: ", answer)
 }
 

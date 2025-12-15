@@ -142,5 +142,5 @@ func GetMessage() string {
 	currentTime := time.Now()
 
 	question := util.QuestionBank[int(currentTime.Month())] + string(yaml)
-	return util.Chat(question)
+	return util.Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
 }
