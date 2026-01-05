@@ -5,7 +5,7 @@ go 1.24.0
 replace github.com/newhorizonsarizona/tmi-status-checker/util => ../../util
 
 require (
-	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20251201124030-96e3e551883a
+	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20260101123914-7ff383e2aa35
 	gopkg.in/yaml.v3 v3.0.1
 )
 

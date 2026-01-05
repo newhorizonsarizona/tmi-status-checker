@@ -66,7 +66,7 @@ generate-screenshot:
 generate-all: generate-report generate-screenshot
 
 test: generate-all
-	go run main.go
+	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(SEND_NOTIFICATION) && go test -run TestGenerateMessage && popd
 
 send-notification:
 	export CLUB_NUMBER=$(CLUB_NUMBER) && pushd $(SEND_NOTIFICATION) && go run main.go && popd

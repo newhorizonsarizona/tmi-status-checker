@@ -14,7 +14,7 @@ func main() {
 	notify.LoadDcpReport()
 
 	//Send the announcement
-	err := sendAnnouncement(generateMessageCard())
+	err := sendAnnouncement(GenerateMessageCard())
 	if err != nil {
 		log.Fatalf("Failed to send DCP Report announcement message: %v", err)
 	} else {
@@ -23,7 +23,7 @@ func main() {
 
 }
 
-func generateMessageCard() map[string]interface{} {
+func GenerateMessageCard() map[string]interface{} {
 	statusSubheading := notify.GetSummary()
 	statusMessage := "Congratulations on your achievements!"
 	statusMessage = notify.GetMessage()
