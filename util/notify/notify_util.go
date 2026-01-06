@@ -1,8 +1,10 @@
 package notify
 
 import (
+	"fmt"
 	"log"
 	"os"
+	"regexp"
 	"time"
 
 	util "github.com/newhorizonsarizona/tmi-status-checker/util"
@@ -101,9 +103,26 @@ type DCPReport struct {
 	} `yaml:"Distinguished Club Program Report"`
 }
 
+var CorporateTerms = []map[string]string{
+	{"tm_term": "Distinguished Club Program", "corp_term": "Strategic plan"},
+	{"tm_term": "Membership", "corp_term": "Particiption"},
+	{"tm_term": "Membership-renewal", "corp_term": "Renewal"},
+	{"tm_term": "Pathways", "corp_term": "Curriculum"},
+	{"tm_term": "Officer", "corp_term": "Executive Board"},
+	{"tm_term": "Dues", "corp_term": "Tution"},
+	{"tm_term": "Goal", "corp_term": "Critical Success Factor"},
+	{"tm_term": "DTM", "corp_term": "Milestone"},
+	{"tm_term": "Member", "corp_term": "Participant"},
+	{"tm_term": "Club", "corp_term": "Program"}}
+
 func LoadDcpReport() {
 	// Open the YAML file
-	file, err := os.Open("../reports/dcp_report.yaml")
+	decodeDcpReport("../reports/dcp_report.yaml")
+}
+
+func decodeDcpReport(dcp_report_yaml_path string) {
+	// Open the YAML file
+	file, err := os.Open(dcp_report_yaml_path)
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}
@@ -143,4 +162,23 @@ func GetMessage() string {
 
 	question := util.QuestionBank[int(currentTime.Month())] + string(yaml)
 	return util.Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
+}
+
+func ReplaceWithCorpTerms(message_body string) string {
+	corp_message_body := message_body
+	for idx, corp_value := range CorporateTerms {
+		fmt.Printf("Corp Term #%d: Replacing %s with %s\n", idx+1, corp_value["tm_term"], corp_value["corp_term"])
+		corp_message_body = caseInsensitiveReplacer(corp_message_body, corp_value["tm_term"], corp_value["corp_term"])
+	}
+	return corp_message_body
+}
+
+func caseInsensitiveReplacer(message string, toReplace string, replaceWith string) string {
+	pattern := fmt.Sprintf(
+		`(?i)(^|[^-])(%s)($|[^-])`,
+		toReplace,
+	)
+	var regx = regexp.MustCompile(pattern)
+	escapedReplaceWith := regexp.QuoteMeta(replaceWith)
+	return regx.ReplaceAllString(message, `${1}`+escapedReplaceWith+`${3}`)
 }

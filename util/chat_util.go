@@ -94,19 +94,6 @@ var QuestionBank = map[int]string{
 		`,
 }
 
-func Test() {
-	// Open the YAML file
-	yaml, err := os.ReadFile("./reports/dcp_report.yaml")
-	if err != nil {
-		log.Fatalf("error: %v", err)
-	}
-	currentTime := time.Now()
-
-	question := QuestionBank[int(currentTime.Month())] + string(yaml)
-	answer := Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
-	log.Println("Answer: ", answer)
-}
-
 func Chat(question string) string {
 	api_key := os.Getenv("OPENAI_API_KEY")
 	if api_key == "" {

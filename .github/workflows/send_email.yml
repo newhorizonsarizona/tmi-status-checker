@@ -21,6 +21,8 @@ env:
   CLUB_NUMBER: ${{ vars.CLUB_NUMBER }}
   CLUB_NAME: ${{ vars.CLUB_NAME }}
   SEND_NOTIFICATION: ${{ vars.SEND_NOTIFICATION }}
+  CHAT_OUTPUT_FORMAT_PROMPT: ${{ vars.CHAT_OUTPUT_FORMAT_PROMPT }}
+  IS_CORPORATE_CLUB: ${{ vars.IS_CORPORATE_CLUB }}
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
