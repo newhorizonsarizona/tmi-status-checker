@@ -37,7 +37,7 @@ install-npm-tools:
 	npm install --save-dev puppeteer
 	npm install -g prettier
 
-install-tools: install-ubuntu-libs install-npm-tools
+install-tools: install-npm-tools
 
 update-npm-packages:
 	# Install npm-check-updates if you don't have it globally
