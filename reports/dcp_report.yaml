@@ -2,11 +2,11 @@ Distinguished Club Program Report:
     Administration:
         Club officer list on time:
             achieved: "1"
-            status: On-time officer list Achieved
+            status: ""
             target: "Y"
         Membership-renewal dues on time:
-            achieved: "0"
-            status: On-time dues-renewal needed
+            achieved: "1"
+            status: Achieved
             target: "Y"
     DCP Status:
         Membership:
@@ -14,7 +14,7 @@ Distinguished Club Program Report:
             Required: "20"
             To Date: ""
         Overall:
-            Current: "0"
+            Current: "2"
             Distinguished: "No"
             Target: "10"
             Year: 2026-2027
@@ -32,8 +32,8 @@ Distinguished Club Program Report:
             status: 2 Level 3s needed
             target: "2"
         Level 4; Path Completion; or DTM award:
-            achieved: "0"
-            status: 1 Level 4, Path Completion, or DTM needed
+            achieved: "1"
+            status: Achieved
             target: "1"
         More Level 2 awards or Online Meeting Mastery Completions:
             achieved: "0"
@@ -49,13 +49,13 @@ Distinguished Club Program Report:
             status: 4 New Members needed
             target: "4"
         New members:
-            achieved: "0"
-            status: 4 New Members needed
+            achieved: "2"
+            status: 2 New Members needed
             target: "4"
     Training:
         Club officer roles trained June–August:
-            achieved: "0"
-            status: First Training Period 4 needed
+            achieved: "6"
+            status: First Training Period Achieved
             target: "4"
         Club officer roles trained November–February:
             achieved: "0"
